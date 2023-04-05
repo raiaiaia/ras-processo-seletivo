@@ -15,6 +15,6 @@ Atividade:
 - O RGB precisa de 3 matrizes de duas dimensões. No caso, uma tupla de 3 inteiros;
 - Sendo assim, o RGB possui uma capacidade de representação de cores de 256³ = 16,7 milhões de cores;
 - Para cada pixel existe uma representação de 3 cores no sistema RGB. Dessa forma, dá para alterar a cor de cada pixel individualmente;
-- ` `Imagens são matrizes Numpy caso retornadas pelo método “imread”. Este método retorna a tupla do pixel em questão na sequência bgr e não rgb;
+- Imagens são matrizes Numpy caso retornadas pelo método “imread”. Este método retorna a tupla do pixel em questão na sequência bgr e não rgb;
 
 

@@ -58,3 +58,7 @@ R = ( 5 - 3 ) / 0,02 => R = 2 / 0,02 => R = 100 ohms;
 
 Construção do código com três períodos de tempo diferentes
 
+- Aprendizado com a missão:
+	- Como calcular a resistência de um resistor para ter o maior aproveitamento do LED;
+	- Um pouco mais sobre a parte eletrônica dos componentes utilizados na missão.
+

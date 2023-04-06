@@ -17,4 +17,5 @@ Atividade:
 - Para cada pixel existe uma representação de 3 cores no sistema RGB. Dessa forma, dá para alterar a cor de cada pixel individualmente;
 - Imagens são matrizes Numpy caso retornadas pelo método “imread”. Este método retorna a tupla do pixel em questão na sequência bgr e não rgb;
 
-
+- Aprendizado com essa missão:
+	Ao longo da missão pude aprender um pouco mais sobre os conceitos gerais de visão computacional e como uma imagem é tratada por "baixo dos panos". 

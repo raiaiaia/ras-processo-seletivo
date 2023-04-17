@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp
 
-path = r'cinco_dedos.png'
+path = r'quatr0_dedos.png'
 img = cv2.imread(path)
 
 mp_hands = mp.solutions.hands
@@ -18,9 +18,12 @@ connections = mp_hands.HAND_CONNECTIONS
 h,w,_ = img.shape 
 pontos = []
 
+#adicionando os 'ligamentos' da mão
 if hand_points:
     for points in hand_points:
       mp_drawing.draw_landmarks(img, points, connections)
+    
+    #contagem dos dedos  
     for id,cord in enumerate(points.landmark): 
             cx,cy = int(cord.x * w),int(cord.y * h)
             pontos.append((cx,cy))
@@ -38,6 +41,8 @@ if hand_points:
     end_point = (200,100)
     color = (0,0,0)
     thickness = -1
+
+    #retangulo que vai aparecer na imagem com o número da contagem
     cv2.rectangle(img, start_point, end_point, color, thickness)
 
     text = str(cont)
@@ -45,6 +50,8 @@ if hand_points:
     font = cv2.FONT_HERSHEY_PLAIN
     font_scale = 8
     color = (255,255,255)
+
+    #colocando a contagem de dedos
     cv2.putText(img,text,coordinates,font,font_scale,color,5) 
 
 cv2.imshow('image', img)

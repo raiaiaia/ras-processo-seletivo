@@ -20,7 +20,10 @@ Aprendizado com essa missão:
 Conceitos novos aprendidos:
 
 - BGR x RGB: Em resumo, a diferença entre esses dois está em como os pixels estão dispostos e em como as informações de um pixel são armazenadas. Sendo RGB: Red, Green e Blue e BGR: Blue, Green e Red. Assim, imagens BGR possuem arranjo inverso aos de imagens RGB e isso pode impactar em como vemos e tratamos as imagens. Isso se torna importante ao utilizarmos as tecnologias de visão computacional descritas anteriormente. É preciso saber como estamos lidando com a imagem, por exemplo: o OpenCV trabalha com o padrão BGR, já o MediaPipe trabalha com o padrão RGB. Dessa forma, ao longo do código existe a possibilidade de termos que ficar alternando e convertendo essa imagem entre um dos dois, como foi feito no código desta missão.
+- O MediaPipe consegue identificar os 21 pontos da nossa mão e com isso traçar as conexões e contar os dedos e até o formato que a mão está fazendo.
 
 Dificuldades enfrentadas:
 
 - A princípio, a ideia era de fazer um detector de imagem que utilizasse a webcam e capturasse em vídeo e fizesse a detecção. Entretanto, por motivos de processamento e dificuldades enfrentadas ao longo do desenvolvimento foi decidido a utilização de imagens previamente tiradas.
+
+
